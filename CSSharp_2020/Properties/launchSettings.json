@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "CSSharp_2020": {
+      "commandName": "Project"
+    },
+    "newProfile1": {
+      "commandName": "Executable"
+    }
+  }
+}
