@@ -28,41 +28,6 @@ namespace CSSharp_2020 {
             // thisWillBeEvaluatedAtRuntime.new_attribute = 33;
         }
 
-        [Test]
-        public void string_interpolation_and_concat () {
-            int year = 2020;
-
-            var message = $"{year} is the current year";
-            Console.WriteLine (message);
-
-            string greetings = string.Concat ("Hello", " ", "Year");
-            Console.WriteLine (greetings);
-        }
-
-        [Test]
-        public void name_of () {
-            int number = 1;
-            Assert.AreEqual ("number", nameof (number));
-        }
-
-        [Test]
-        public void out_variables () {
-            string stringNumber = "15";
-
-            if (int.TryParse (stringNumber, out int number)) // declaration inline
-            {
-                AreEqual (number, 15);
-            }
-        }
-
-        [Test]
-        public void null_conditional_operators () {
-            string userName = "José";
-            string defaultUserName = "John Doe";
-            string selectedUserName = userName ?? defaultUserName;
-            Assert.AreEqual ("José", selectedUserName);
-        }
-
         public void b_arrays () {
             string[] textArray1 = new string[2];
             textArray1[0] = "hello";
@@ -181,6 +146,31 @@ namespace CSSharp_2020 {
         }
 
         [Test]
+        public void string_interpolation_and_concat () {
+            int year = 2020;
+
+            var message = $"{year} is the current year";
+            Console.WriteLine (message);
+
+            string greetings = string.Concat ("Hello", " ", "Year");
+            Console.WriteLine (greetings);
+        }
+
+        [Test]
+        public void name_of () {
+            int number = 1;
+            Assert.AreEqual ("number", nameof (number));
+        }
+
+        [Test]
+        public void null_conditional_operators () {
+            string userName = "José";
+            string defaultUserName = "John Doe";
+            string selectedUserName = userName ?? defaultUserName;
+            Assert.AreEqual ("José", selectedUserName);
+        }
+
+        [Test]
         public void exceptions () {
             try {
                 throw new Exception ("Exception filtered");
@@ -204,6 +194,8 @@ namespace CSSharp_2020 {
                 Fail ();
             }
         }
+
+        // go to the versions!
 
         [Test]
         public void Exceptions_On_ternary_operations () {
