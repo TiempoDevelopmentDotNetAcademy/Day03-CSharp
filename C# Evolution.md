@@ -1,6 +1,7 @@
 
 # C# Evolution
 ![logo](logo.png)
+![logo](banner.PNG)
 
 ```
 // Hello World! program
@@ -14,6 +15,8 @@ namespace HelloWorld
     }
 }
 ```
+
+![logo](basic.PNG)
 
 # C# version 1.0
 ## Classes
@@ -60,7 +63,6 @@ public struct Coords
     public override string ToString() => $"({X}, {Y})";
 }
 ```
-# Go to the Code!
 
 ## Interfaces
 ```
@@ -86,24 +88,11 @@ class ImplementationClass : ISampleInterface
         obj.SampleMethod();
     }
 }
-```
 
-## Properties
 ```
-public class Person
-{
-    public string FirstName { get; set; }
-}
-```
+# Go to the Code!
 
-## Attributes
-```
-[Serializable]
-public class SampleClass
-{
-    // Objects of this type can be serialized.
-}
-```
+![logo](Evolution.PNG)
 
 # C# version 2.0
 ## Generics
@@ -375,15 +364,10 @@ private Dictionary<int, string> messages = new Dictionary<int, string>
     { 500, "The web server can't come out to play today."}
 };
 ```
+![logo](Modern.PNG)
 
 # C# version 7.0
-## Out variables
-```
-if (int.TryParse(input, out int result))
-    Console.WriteLine(result);
-else
-    Console.WriteLine("Could not parse input");
-```
+- Out variables
 Tuples and deconstruction
 - Pattern matching
 - Local functions

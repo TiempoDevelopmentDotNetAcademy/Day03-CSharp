@@ -10,22 +10,24 @@ namespace CSSharp_2020 {
     [TestFixture]
     
     class Basic {
+
         [Test]
         public void a_variables () {
-            //int age = 18;
-            // decimal weight = 80.0m;
-            // float height = 33.33f;
-            // string firstname = string.Empty;
-            // string lastname = null;
-            // char grade = 'A';
-            //int bankFounds = 10_000;
-            // bool areYouHappy = true;
-            //int? thisIsNullable = null;
+            int age = 18;
+            decimal weight = 80.0m;
+            float height = 33.33f;
+            char grade = 'A';
+            string firstname = string.Empty;
+            string lastname = null;
+            int bankFounds = 10_000;
+            bool areYouHappy = false;
+            int? thisIsNullable = null;
 
-            // var thisWillResolveAtCompileTime = "";
+            var thisWillResolveAtCompileTime = "";
 
-            // dynamic thisWillBeEvaluatedAtRuntime = new ExpandoObject ();
-            // thisWillBeEvaluatedAtRuntime.new_attribute = 33;
+            dynamic thisWillBeEvaluatedAtRuntime = new ExpandoObject ();
+            thisWillBeEvaluatedAtRuntime.new_attribute = 33;
+            thisWillBeEvaluatedAtRuntime.new_attribute123Text = "123";
         }
 
         public void b_arrays () {
@@ -55,14 +57,15 @@ namespace CSSharp_2020 {
         public void control_structures_if_ternary () {
             var number1 = 1;
             var number2 = 2;
-            var evaluation = number1 == number2 ? "numbers are equal" : "numbers are different";
+
+            string evaluation = number1 == number2 ? "numbers are equal" : "numbers are different";
 
             Console.WriteLine (evaluation);
         }
 
         [Test]
         public void control_structures_switch () {
-            var option = 1;
+            int option = 1;
 
             switch (option) {
                 case 1:
@@ -80,7 +83,6 @@ namespace CSSharp_2020 {
                 default:
                     Console.WriteLine ("unknown option");
                     break;
-
             }
         }
 
@@ -159,13 +161,16 @@ namespace CSSharp_2020 {
         [Test]
         public void name_of () {
             int number = 1;
+
             Assert.AreEqual ("number", nameof (number));
         }
 
         [Test]
         public void null_conditional_operators () {
+            
             string userName = "José";
             string defaultUserName = "John Doe";
+
             string selectedUserName = userName ?? defaultUserName;
             Assert.AreEqual ("José", selectedUserName);
         }
@@ -234,8 +239,9 @@ namespace CSSharp_2020 {
 
             var isRaining = true;
             var doINeedToGoOut = true;
+            var tuple = (isRaining, doINeedToGoOut);
 
-            switch ((isRaining, doINeedToGoOut)) {
+            switch (tuple) {
                 case (true, true):
                     WriteLine ("I need to take my umbrella.");
                     break;

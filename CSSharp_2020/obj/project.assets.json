@@ -4601,29 +4601,32 @@
     ]
   },
   "packageFolders": {
-    "/Users/Mario/.nuget/packages/": {},
-    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\diego munoz\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Mario/SourceTreeProjects/Day03-CSharp/CSSharp_2020/CSSharp_2020.csproj",
+      "projectUniqueName": "c:\\Users\\diego munoz\\Source\\Repos\\CSharp2020\\CSSharp_2020\\CSSharp_2020.csproj",
       "projectName": "CSSharp_2020",
-      "projectPath": "/Users/Mario/SourceTreeProjects/Day03-CSharp/CSSharp_2020/CSSharp_2020.csproj",
-      "packagesPath": "/Users/Mario/.nuget/packages/",
-      "outputPath": "/Users/Mario/SourceTreeProjects/Day03-CSharp/CSSharp_2020/obj/",
+      "projectPath": "c:\\Users\\diego munoz\\Source\\Repos\\CSharp2020\\CSSharp_2020\\CSSharp_2020.csproj",
+      "packagesPath": "C:\\Users\\diego munoz\\.nuget\\packages\\",
+      "outputPath": "c:\\Users\\diego munoz\\Source\\Repos\\CSharp2020\\CSSharp_2020\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/Mario/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\diego munoz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
-        "https://api.nuget.org/v3/index.json": {}
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://pkgs.dev.azure.com/sabdev/SABNuGet/_packaging/SaB/nuget/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
@@ -4667,7 +4670,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.200/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
       }
     }
   }
